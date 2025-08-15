@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* يمكنك هنا إضافة تخصيصات CSS إضافية */
+
+body {
+  font-family: 'Tajawal', sans-serif;
+}

@@ -1,0 +1,135 @@
+/* إعدادات الاتجاه */
+body.rtl {
+  direction: rtl;
+}
+
+body.ltr {
+  direction: ltr;
+}
+
+.navbar-container {
+  background-color: #c8953e;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.college-logo {
+  width: 250px;
+  height: 120px;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 10px;
+}
+
+.language-switcher button {
+  background-color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.language-switcher button.active {
+  background-color: #0066cc;
+  color: white;
+}
+
+/* ✅ قائمة التنقل */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 20px 0 0 0;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* ✅ دعم اتجاه مرن حسب اللغة */
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+/* ✅ حل مشكلة لون "عن الكلية" */
+.nav-links li a,
+.nav-links li span {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li span:hover {
+  color: #ffcc00;
+}
+
+/* قائمة منسدلة */
+.has-dropdown .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #ffcc00;
+  min-width: 180px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.has-dropdown:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  padding: 10px 20px;
+}
+
+.dropdown li a {
+  color: white;
+  background-color: #ffcc00;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown li a:hover {
+  background-color: #0055aa;
+}
+
+/* زر Moodle */
+.welcome {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.moodle-btn {
+  background-color: #D2232A;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.moodle-btn:hover {
+  background-color: #D2232A;
+}
